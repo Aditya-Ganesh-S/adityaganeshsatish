@@ -1,0 +1,39 @@
+.contact{
+    padding-top: 5rem;
+    &__heading{
+        @include section_title;
+        color: crimson;
+    }
+
+    &__container{
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__box{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($primary-color-light, 0.8),
+            rgba($primary-color-dark, 0.8));
+        padding: 2rem;
+        color: white;
+        letter-spacing: 0.2rem;
+
+        @include respond(phone){
+            margin: 1rem;
+        }
+        
+        &--img{
+            display: inline;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+}

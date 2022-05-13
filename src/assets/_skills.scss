@@ -1,0 +1,52 @@
+.skills{
+    &__heading{
+        @include section_title;
+        color: crimson;
+    }
+    padding-bottom: 1rem;
+    transform: skewY(-7deg);
+    background-color: $color-yellow-light-1;
+    margin-top: -12rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    &__container{
+        margin: 5rem 0rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 0.5rem;
+        row-gap: 5rem;
+        
+        &--skill{
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            
+            @include respond(phone){
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            img {
+                height: 7rem;
+                width: 7rem;
+
+                @include respond(phone){
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+
+        }
+
+        &--text{
+            margin-top: 1rem;
+        }
+    }
+
+}

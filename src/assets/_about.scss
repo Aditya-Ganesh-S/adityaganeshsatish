@@ -1,0 +1,87 @@
+.about{
+    padding: 21rem 0;
+    margin-top: -20vh;
+    background-color: $color-yellow-light-1;
+
+    @include respond(phone){
+        margin-top: -10vh;
+    }
+
+    &__heading{
+        @include section_title;
+        margin-top: -10rem;
+        position: relative;
+        padding-bottom: 1.5rem;
+    }
+
+    &__heading::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 12rem;
+        height: 0.2rem;
+        background: #111;
+        transform: translateX(-50%);
+    }
+
+    &__heading::after{
+        content: "Who I am";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        font-size: 1.2rem;
+        color: crimson;
+        padding: 0.4rem;
+        background: $color-yellow-light-1;
+        transform: translateX(-50%);
+        font-family: 'Tapestry', cursive;
+    }
+
+    &__container{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 90%;
+
+        @include respond(phone){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+
+    &__left{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        &--img{
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            transition: all .2s;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            }
+            height: 25rem;
+            width: 20rem;
+        }
+        @include respond(phone){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__right{
+        width: 55%;
+        &--text{
+            font-size: 1rem;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+    }
+}

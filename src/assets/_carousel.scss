@@ -1,0 +1,43 @@
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+
+.next{
+    position: absolute;
+    top: calc(50% - 2rem);
+    right: 0;
+    height: 5rem;
+    &:hover{
+        cursor: pointer;
+    }
+    @include respond(phone){
+        height: 4rem;
+        right: 1rem;
+    }
+}
+.prev{
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 0;
+    height: 5rem;
+    &:hover{    
+        cursor: pointer;
+    }
+    @include respond(phone){
+        top: calc(50% - 2rem);
+        height: 4rem;
+        left: 1rem;
+    }
+}
+
+.carousel-slide{
+    height:  14rem;
+    margin-left: 18rem;
+    @include respond(phone){
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+}

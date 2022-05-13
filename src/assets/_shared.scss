@@ -1,0 +1,48 @@
+
+//shared variables
+$primary-color: #55c57a;
+$primary-color-light: #7ed56f;
+$primary-color-dark: #28b485;
+
+$color-yellow: yellow;
+$color-yellow-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-white: white;
+$color-black: black;
+
+//shared mixin
+@mixin section_title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2rem;
+}
+
+//background parallax
+@mixin background_parallax{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//Media Query Manager
+
+@mixin respond($breakpoint){
+    
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) {@content};       //1200px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) {@content};    //900px
+    }
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {@content};     //600px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) {@content};     //1800px+
+    }
+}
