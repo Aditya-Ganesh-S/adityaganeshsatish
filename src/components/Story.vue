@@ -4,7 +4,7 @@
       <img src="../assets/img/nat-8.jpg" alt="" class="story__img" />
     </figure>
     <div class="story__text">
-      <p>{{ feedback.name }}</p>
+      <p class="story__text--name">{{ feedback.name }}</p>
       <p>{{ feedback.feedback }}</p>
     </div>
   </div>

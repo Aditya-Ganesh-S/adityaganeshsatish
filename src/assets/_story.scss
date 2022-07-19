@@ -41,6 +41,13 @@
         transform: skewX(12deg);
         @include respond(phone){
             transform: skewX(0deg);
+            text-align: center;
         } 
+
+        &--name{
+            text-align: center;
+            font-size: 1.3rem;
+            color: black;
+        }
     }
 }

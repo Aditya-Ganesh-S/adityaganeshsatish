@@ -33,9 +33,10 @@
 
 .carousel-slide{
     height:  14rem;
-    margin-left: 18rem;
+    width: 90%;
+    margin-left: 13rem;
     @include respond(phone){
-        margin-left: 0;
+        margin-left: 2rem;
         display: flex;
         justify-content: center;
         height: 100%;

@@ -7,7 +7,7 @@
     border-radius: 0.5rem;
 
     @include respond(phone){
-        height: 38rem
+        height: 40rem
     }
 
     &__side{
@@ -21,7 +21,7 @@
         backface-visibility: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         @include respond(phone){
-            height: 38rem;
+            height: 40rem;
             width: 100%;
         }
         &--front {
@@ -75,6 +75,9 @@
         &--img{
             height: 3rem;
             width: 3rem;
+        }
+        @include respond(phone){
+            margin-top: 30%;
         }
     }
 

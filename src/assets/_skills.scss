@@ -33,12 +33,12 @@
             }
 
             img {
-                height: 7rem;
-                width: 7rem;
+                height: 5rem;
+                width: 5rem;
 
                 @include respond(phone){
-                    height: 5rem;
-                    width: 5rem;
+                    height: 3rem;
+                    width: 3rem;
                 }
             }
 

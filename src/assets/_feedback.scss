@@ -15,12 +15,16 @@
 
     &__heading{
         @include section_title;
-        margin-left: 8rem;
+        margin-left: 5rem;
         margin-bottom: 2rem;
         color: White;
 
         @include respond(phone){
             margin-left: 0rem;
         }
+    }
+
+    &__container{
+        width: 80%;
     }
 }
