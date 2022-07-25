@@ -11,12 +11,10 @@
 
       <div class="about__right">
         <div class="about__right--text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          ullam autem provident consequuntur! Atque accusantium, non, maxime
-          labore voluptatum ad eius cum sed aliquid ullam sapiente architecto
-          itaque dolore quo expedita aspernatur rem quas esse repellendus! Animi
-          adipisci recusandae aut est quod asperiores qui, magnam nostrum
-          excepturi. Sapiente, quod cum.
+I am a current graduate student at Northeastern. I love building fullstack web applications
+with beautiful user interfaces. I believe in making an impact on the world,
+and making lives of people simpler through technology. I believe in being a student lifelong who is 
+curious to learn new things and apply them in real world. 
         </div>
       </div>
     </div>

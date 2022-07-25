@@ -36,12 +36,14 @@ export default {
           feedback:
             "Aditya is steadfast in his approach to problem solving as an up-and-coming engineering professional. He faces challenges head on and is committed to delivering the best product. Aditya creates a long lasting positive impression when it comes to software development.",
         },
+        /*
         {
           name: "Dan Swester",
           role: "Front-End Developer at Peapod Digital Labs",
           feedback:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste delectus quisquam voluptate temporibus non amet. Adipisci soluta sit placeat!",
         },
+        */
       ],
     };
   },

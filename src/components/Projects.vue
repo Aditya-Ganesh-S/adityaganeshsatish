@@ -51,10 +51,9 @@ export default {
           title: "My Music Channel",
           duration: "Feb 2022 - Apr 2022",
           discription: [
-            "A Java-based Simulator to map the evolution of SARS-COV-2 using the Genetic Algorithm",
-            "Simulated the effect of the virus on 4 different human Genotypes by considering factors like human fitness, virus fitness, and Vaccine.",
-            "Increased the performance of the application with the usage of multi-threading",
-            "Simulated statistical data and illustrated it using graphs",
+            "Designed and implemented a responsive music application using VueJs where users can upload songs and listen to songs uploaded by others",
+            "Implemented Authentication and storage using Firebase",
+            "Performed snapshot testing and written testcases using JEST",
           ],
           techStack: [Vue, Firebase, Jest, Tailwind],
           projectImage: MusicImage,

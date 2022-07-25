@@ -1,11 +1,12 @@
 <template>
   <div class="story">
     <figure class="story__shape">
-      <img src="../assets/img/nat-8.jpg" alt="" class="story__img" />
+      <img src="../assets/img/scottPlaceholder.jpg" alt="" class="story__img" />
     </figure>
     <div class="story__text">
       <p class="story__text--name">{{ feedback.name }}</p>
       <p>{{ feedback.feedback }}</p>
+      <p class="story__text--position">Senior Software engineer manager at Peapod Digital Labs</p>
     </div>
   </div>
 </template>
